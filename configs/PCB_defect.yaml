@@ -1,4 +1,4 @@
-path: D:\pycharm\pythonProject\PCB_defect\data
+path: D:\pycharm\pythonProject\VisualProjects\ObjectDetection\data
 train: images/train
 val: images/val
 test: images/test

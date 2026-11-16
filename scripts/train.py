@@ -10,7 +10,7 @@ from common import ROOT
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="YOLO 手机屏幕缺陷训练")
-    parser.add_argument("--data", default="D:/pycharm/pythonProject/PCB_defect/data/pcb_detection_clahe/dataset.yaml")
+    parser.add_argument("--data", default="D:/pycharm/pythonProject/VisualProjects/ObjectDetection/data/pcb_detection_clahe/dataset.yaml")
     parser.add_argument("--model", default="yolo11n.pt")
     parser.add_argument("--epochs", type=int, default=100)
     parser.add_argument("--imgsz", type=int, default=1024)
