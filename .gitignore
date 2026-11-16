@@ -1,24 +1,57 @@
+# Python environments and caches
 .venv/
+venv/
+env/
 __pycache__/
 *.py[cod]
-data/screen_defect/
-data/screen_defect_*/
-runs/
-reports/data/*.png
-reports/data/*.json
-reports/errors/
-reports/metrics.json
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# IDE and local settings
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store
+
+# Model weights, exported graphs and runtime artifacts
 *.pt
+*.pth
+*.ckpt
 *.onnx
 *.engine
+*.plan
+*.tflite
+*.safetensors
 *.cache
+*.log
+*.tmp
+
+# Datasets, experiments and generated deliverables
 /data/
-/semantic_pcb/dataset/
-/semantic_final/dataset/
-/semantic_pcb/runs/
-/semantic_final/runs/
+/datasets/
+/weights/
+/checkpoints/
 /runs/
 /output/
+/outputs/
 /tmp/
-/.idea/
-/.venv/
+/temp/
+/scripts/data/
+/scripts/weights/
+/scripts/runs/
+
+# Keep project code, YAML configs, README and requirements tracked.
+
+# Generated detection measurements and error images
+/reports/**
+!/reports/experiment_template.md
+!/reports/README.md
