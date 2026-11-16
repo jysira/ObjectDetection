@@ -11,8 +11,8 @@ from common import ROOT
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="在 val/test 集上验证 YOLO 模型")
-    parser.add_argument("--weights", default="D:/pycharm/pythonProject/PCB_defect/runs/01_detection/training/PCB_defect_clahe/weights/best.pt")
-    parser.add_argument("--data", default="D:/pycharm/pythonProject/PCB_defect/data/pcb_detection_clahe/dataset.yaml")
+    parser.add_argument("--weights", default="D:/pycharm/pythonProject/VisualProjects/ObjectDetection/runs/01_detection/training/PCB_defect_clahe/weights/best.pt")
+    parser.add_argument("--data", default="D:/pycharm/pythonProject/VisualProjects/ObjectDetection/data/pcb_detection_clahe/dataset.yaml")
     parser.add_argument("--split", choices=["val", "test"], default="test")
     parser.add_argument("--imgsz", type=int, default=1024)
     parser.add_argument("--device", default=None)
